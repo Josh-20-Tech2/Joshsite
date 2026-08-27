@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Morovia | Software Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Joshua Morovia, Full-Stack Software Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="pic/PASS.jpg" type="image/x-icon">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Joshua<span class="logo-dot">.</span>Morovia</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-text reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Joshua Morovia</h1>
+          <h2 class="hero-role">
+            <span id="typed-text">Full-Stack Developer</span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            I design and build fast, accessible, and beautiful web applications.
+            Passionate about clean code, great UX, and solving real problems with technology.
+          </p>
+          <div class="hero-actions">
+            <a href="https://josh-20-tech.github.io/talkingApp/" class="btn btn-primary">View My Work</a>
+            <a href="https://wa.me/+23208676395" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://https://www.facebook.com/profile.php?id=100081219973411" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+            <a href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+            <a href="https://www.instagram.com/_morovia_/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            <a href="mailto:sovulamorovia626@gmail.com" aria-label="Email">@</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">JM</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="about" id="about">
+      <div class="container">
+        <p class="section-tag reveal">Get To Know Me</p>
+        <h2 class="section-title reveal">About Me</h2>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number" data-count="4">0</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="35">0</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="20">0</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <p>
+              I'm a full-stack developer with a passion for crafting digital experiences that are
+              both functional and delightful. Over the past four years, I've worked with startups
+              and agencies to build products used by thousands of people.
+            </p>
+            <p>
+              When I'm not coding, you'll find me contributing to open source, writing about web
+              development, or exploring new coffee shops with my laptop in tow.
+            </p>
+            <a href="pic/joshua.pdf" download class="btn btn-outline">Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Skills Section ===== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <p class="section-tag reveal">What I Work With</p>
+        <h2 class="section-title reveal">Skills &amp; Tools</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript, React, Vue, TypeScript</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">{ }</div>
+            <h3>Backend</h3>
+            <p>Node.js, Express, Python, Django, REST &amp; GraphQL APIs</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">DB</div>
+            <h3>Databases</h3>
+            <p>MongoDB, PostgreSQL, MySQL, Redis, Firebase</p>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">&#9881;</div>
+            <h3>Tools &amp; DevOps</h3>
+            <p>Git, Docker, CI/CD, AWS, Vercel, Figma</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <p class="section-tag reveal">My Recent Work</p>
+        <h2 class="section-title reveal">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-1"></div>
+            <div class="project-info">
+              <h3>Talking-App</h3>
+              <p>A full-featured online application that reads whatever you type.</p>
+              <div class="tech-tags">
+                <span>HTML5</span><span>CSS3</span><span>JAVASCRIPT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://josh-20-tech.github.io/talkingApp/" target="_blank" rel="noopener">Live Demo &#8594;</a>
+                <a href="#" target="_blank" rel="noopener">Source Code &#8594;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-2"></div>
+            <div class="project-info">
+              <h3>NEWS-WEBSITE</h3>
+              <p>City Hunter uphold the highest standards of editorial integrity and independence. We are committed to biasight and fair reporting.</p>
+              <div class="tech-tags">
+                <span>HTML5</span><span>JAVASCRIPT</span><span>BOOTSTRAP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://josh-20-tech.github.io/cityhuntersl/" target="_blank" rel="noopener">Live Demo &#8594;</a>
+                <a href="#" target="_blank" rel="noopener">Source Code &#8594;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-3"></div>
+            <div class="project-info">
+              <h3>BANKING APPLICATION</h3>
+              <p>Still in production.......</p>
+              <div class="tech-tags">
+                <span>JAVA</span><span>JSP</span><span>API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Still building &#8594;</a>
+                <a href="#" target="_blank" rel="noopener">Still building &#8594;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-4"></div>
+            <div class="project-info">
+              <h3>PARTY INVITE</h3>
+              <p>A web application built for inviting friends to a party</p>
+              <div class="tech-tags">
+                <span>DOTNET</span><span>C#</span><span>SQLSERVER</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">LOCALLY HOST &#8594;</a>
+                <a href="#" target="_blank" rel="noopener">LOCALLY HOST &#8594;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Contact Section ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="section-tag reveal">Get In Touch</p>
+        <h2 class="section-title reveal">Let's Work Together</h2>
+        <p class="contact-subtitle reveal">
+          Have a project in mind or just want to say hi? My inbox is always open.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <span class="contact-icon">@</span>
+              <div>
+                <h4>Email</h4>
+                <p>sovualmorovia626@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">&#9742;</span>
+              <div>
+                <h4>Phone</h4>
+                <p>+232 (80) 676-396</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">&#10269;</span>
+              <div>
+                <h4>Location</h4>
+                <p>GEORGE BROOK DWARXARK, FREETOWN</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form"  novalidate action="https://formspree.io/f/xqpkzooy" method="POST">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off" required />
+              <span class="error-message" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="off" required />
+              <span class="error-message" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" autocomplete="off" required />
+              <span class="error-message" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+              <span class="error-message" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            <p class="form-success" id="form-success">&#10003; Message sent successfully! I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Joshua<span class="logo-dot">.</span>Morovia</a>
+      <p>&copy; <span id="year"></span> Joshua Morovia. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="https://https://www.facebook.com/profile.php?id=100081219973411" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="https://www.linkedin.com/in/sovula-morovia-9518bb431/?skipRedirect=true" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a>
+        <a href="https://www.instagram.com/_morovia_/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

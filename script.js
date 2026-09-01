@@ -182,7 +182,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (form) {
-    form.addEventListener("submit", (e) => {
+    const errorMsg = document.getElementById("form-error");
+    const submitBtn = form.querySelector(".form-submit");
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
       successMsg.classList.remove("show");
 
@@ -229,13 +232,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!isValid) return;
 
-      // Simulate a successful submission (no backend wired up yet).
-      successMsg.classList.add("show");
-      form.reset();
+      /* ---------- Send to Formspree ---------- */
+      const originalBtnText = submitBtn ? submitBtn.textContent : "";
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+      }
 
-      setTimeout(() => {
-        successMsg.classList.remove("show");
-      }, 5000);
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          successMsg.classList.add("show");
+          form.reset();
+
+          setTimeout(() => {
+            successMsg.classList.remove("show");
+          }, 5000);
+        } else {
+          const data = await response.json().catch(() => null);
+          const detail =
+            data && data.errors
+              ? data.errors.map((err) => err.message).join(", ")
+              : data && data.error
+                ? data.error
+                : "";
+
+          console.error("Formspree submission failed:", response.status, data);
+
+          if (errorMsg) {
+            errorMsg.textContent =
+              detail ||
+              `Oops! Something went wrong (error ${response.status}). Please try again.`;
+            errorMsg.classList.add("show");
+          }
+        }
+      } catch (err) {
+        console.error("Formspree network error:", err);
+        if (errorMsg) {
+          errorMsg.textContent =
+            "Network error — please check your connection and try again.";
+          errorMsg.classList.add("show");
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnText;
+        }
+      }
     });
   }
 

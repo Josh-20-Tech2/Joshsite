@@ -654,6 +654,13 @@ section {
 
 .form-success.show { display: block; }
 
+.form-error {
+  display: none;
+  color: #ef4444;
+}
+
+.form-error.show { display: block; }
+
 /* ===== Footer ===== */
 .footer {
   border-top: 1px solid var(--border-color);
